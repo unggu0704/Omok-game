@@ -1,5 +1,6 @@
 package concave.ui;
 
+import concave.game.Input.ClickHandler;
 import concave.game.StoneDto;
 
 import javax.swing.*;
@@ -16,6 +17,7 @@ public class GameGUI extends JFrame {
     private int[][] board;  // 돌 상태 저장 배열
 
     private StoneDto stoneDto;
+    private ClickHandler clickHandler;  // 클릭 핸들러
 
 
 
@@ -56,8 +58,10 @@ public class GameGUI extends JFrame {
                 drawBoard(g);  // 오목판 그리기
                 drawStones(g);  // 돌 그리기
             }
+
         };
 
+        boardPanel.addMouseListener(clickHandler);
         boardPanel.setPreferredSize(new Dimension(BOARD_SIZE * CELL_SIZE, BOARD_SIZE * CELL_SIZE));
         return boardPanel;
     }
