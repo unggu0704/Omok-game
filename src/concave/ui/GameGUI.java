@@ -1,6 +1,6 @@
-package omok.ui;
+package concave.ui;
 
-import omok.game.StoneDto;
+import concave.game.StoneDto;
 
 import javax.swing.*;
 import java.awt.*;
