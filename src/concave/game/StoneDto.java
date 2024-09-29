@@ -1,4 +1,4 @@
-package omok.game;
+package concave.game;
 
 public class StoneDto {
     private int y, x, value;
