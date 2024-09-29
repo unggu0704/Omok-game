@@ -1,2 +1,5 @@
-package concave.game;public class OmokManager {
+package concave.game;
+
+public class OmokManager {
+
 }
