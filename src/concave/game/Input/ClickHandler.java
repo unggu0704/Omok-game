@@ -28,12 +28,6 @@ public class ClickHandler extends MouseAdapter {
 
         // 유효한 클릭인지 확인 (오목판 범위 내)
         if (clickedRow >= 0 && clickedRow < BOARD_SIZE && clickedCol >= 0 && clickedCol < BOARD_SIZE) {
-            // 비어있는 셀인지 확인 후 돌 놓기 (1: 흑돌, 2: 백돌)
-            if (board[clickedRow][clickedCol] == 0) {
-                board[clickedRow][clickedCol] = 1;  // 예시로 흑돌을 놓음 (실제 게임에서는 흑백 차례를 고려해야 함)
-                // 여기서 repaint() 메서드를 호출할 수 있는 인터페이스를 통해 전달할 수 있어
-                // 예를 들어, Callback 메서드를 정의해 GUI에서 repaint를 호출하게 할 수 있음
-            }
         }
     }
 }
